@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="@color/teal_700"
+    android:layout_margin="10dp"
+    android:id="@+id/card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Text"
+            android:id="@+id/tvSchoolName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDBN"
+            app:layout_constraintTop_toBottomOf="@id/tvSchoolName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="DBN"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvDBN"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvPhoneHandle"
+            android:text="Phone #: "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/tvPhoneHandle"
+            app:layout_constraintTop_toTopOf="@id/tvPhoneHandle"
+            app:layout_constraintBottom_toBottomOf="@id/tvPhoneHandle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/tvPhoneNumber"
+            android:text="Sample phone number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneHandle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Sample Location"
+            android:id="@+id/tvLocation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Extras"
+            android:id="@+id/tvExtrasHandle"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExtrasActual"
+            app:layout_constraintStart_toEndOf="@id/tvExtrasHandle"
+            app:layout_constraintTop_toTopOf="@id/tvExtrasHandle"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
